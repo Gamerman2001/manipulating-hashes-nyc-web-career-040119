@@ -17,8 +17,8 @@ def first_challenge
 contacts
   contacts.each do | key, value|
     if key == "Jon Snow"
-      value.each do |atrib, value|
-        value.delete_if { |x| x == "strawberry"}
+      value.each do |atrib, dig|
+        dig.delete_if { |x| x == "strawberry"}
       end 
     end
   end 
