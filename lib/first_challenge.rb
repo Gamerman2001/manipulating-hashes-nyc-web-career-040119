@@ -16,9 +16,11 @@ def first_challenge
   #your code here
 contacts
   contacts.each do | key, value|
-    if key == "Jon Snow"
+    if key == "Freddy Mercury"
       value.each do |atrib, dig|
-        dig.delete { |x| x == "strawberry"}
+        if atrib == :favorite_icecream_flavors 
+          dig.delete_if { |x| x == "strawberry"}
+        end
       end 
     end
   end 
