@@ -18,7 +18,7 @@ contacts
   contacts.each do | key, value|
     if key == "Jon Snow"
       value.each do |atrib, dig|
-        dig.delete_if { |x| x == "strawberry"}
+        dig.delete { |x| x == "strawberry"}
       end 
     end
   end 
